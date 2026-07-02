@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleDel.css">
+    <title>Deletion</title>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Input the number of the entry that you wanna Delete.
+        </h2>
+        <%for(let i=0; i<bloggs.length; i++){%>
+            <div class="blog">
+                <h2>
+                    <%=i+1%>. <%=bloggs[i].title%>
+                </h2>
+                <p>
+                    <%=bloggs[i].content%>
+                </p>
+            </div>
+        <%}%>
+        <form action="/" method="post">
+            <input type="number" name="delNum" placeholder="enter the num" required>
+            <button type="submit">Go onn</button>
+        </form>
+    </div>
+</body>
+</html>

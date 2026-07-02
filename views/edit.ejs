@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleEdit.css">
+    <title>Edit</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Blog</h1>
+        <p>Update your post and save the changes</p>
+        <form action="/edit/<%= id %>" method="post">
+            <label>Title</label>
+            <input type="text" name="title" value="<%= bloggs.title%>">
+            <label>Content</label>
+            <textarea name="content"><%= bloggs.content%></textarea>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>

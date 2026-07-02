@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleBlog.css">
+    <title>Create Now</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create New Blog</h1>
+        <p>Share your thoughts with the world.</p>
+        <form action="/blogs" method="post">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="enter blog title" required>
+            <br><br>
+            <label>Content</label>
+            <textarea name="content" rows="10" cols="50" placeholder="write your blog here" required></textarea>
+            <br><br>
+            <button type="submit">Publish</button>
+        </form>
+    </div>
+</body>
+</html>
